@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.container {
+    width: 960px;
+    height: 600px;
+    overflow: auto;
+    margin: auto;
+}
+
+.leftSide {
+    width: 30%;
+    height: 100%;
+    background: fuchsia;
+    float: left;
+}
+
+.rightSide {
+    width: 70%;
+    height: 100%;
+    background: blueviolet;
+    float: right;
+}
+
+.profileSide {
+    margin-top: 30px;
+    height: 90%;
+    width: 85%;
+    float: right;
+    background: blanchedalmond;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.profileSide_header {
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid black;
+}
+
+.profileSide_info {
+    width: 100%;
+    height: 45%;
+    border-bottom: 1px solid black;
+}
+
+.profileSide_projects {
+    width: 100%;
+    height: 30%;
+    border-bottom: 1px solid black;
+}
+
+.taskSide {
+    margin-top: 30px;
+    height: 90%;
+    width: 95%;
+    float: left;
+    background: salmon;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.taskSide_header {
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid black;
+}
+
+.taskSide_content {
+    background: greenyellow;
+    width: 100%;
+    height: 90%;
+    border-bottom-right-radius: 5px;
+}
+
+.taskSide_content_button {
+    height: 15%;
+}
+
+.taskSide_content_calendar {
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    background: wheat;
+    border-radius: 5px;
+}
+
+.calendar_header {
+    height: 10%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid black;
+    overflow: auto;
+}
+
+.calendar_row {
+    height: 18%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    overflow: auto;
+}
+
+.calendar_bottom {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: auto;
+}
+
+.calendar_col {
+    width: 20%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    float: left;
+}
