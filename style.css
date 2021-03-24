@@ -13,7 +13,7 @@
 
 .leftSide {
     width: 30%;
-    height: auto;
+    height: 100%;
     background: rgb(0, 204, 255);
     float: left;
 }
@@ -39,7 +39,7 @@
 .profileSide_header {
     text-align: center;
     width: 100%;
-    height:44px;
+    height: 44px;
     margin-top: 10px;
     font: bold;
     color: rgb(145, 137, 137);
@@ -53,11 +53,81 @@
     border-bottom: 1px solid black;
 }
 
+.icon_group {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.setting_icon {
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
+
+.message_icon {
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
+
+.notice_icon {
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
+
+.progress_bar {
+    width: 80%;
+    height: 2%;
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+
+.colored_partition {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;
+    height: 100%;
+    background: deepskyblue;
+}
+
+.task_counter {
+    width: 100%;
+    height: 25%;
+    margin-top: 6%;
+    display: flex;
+}
+
+.task-text {
+    font-size: 10px;
+}
+
+.completed_task {
+    margin: auto;
+}
+
+.todo_task {
+    margin: auto;
+}
+
+.all_completed_task {
+    margin: auto;
+}
+
 .profileSide_projects {
     width: 100%;
-    height: 30%;
+    height: 25%;
     border-bottom: 1px solid black;
 }
+
 .profileSide_header_avatar {
     width: 40px;
     height: 40px;
@@ -65,6 +135,7 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 .profileSide_info_icon {
     width: 20px;
     height: 20px;
@@ -73,22 +144,30 @@
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
 .profileSide_projects_ruler_inline {
     display: flex;
-    height: 30px;
+    height: 20%;
+    width: 100%;
 }
-.profileSide_info_data{
+
+.profileSide_info_data {
     width: 20%;
     margin-left: 10%;
     text-align: center;
 }
+
 .profileSide_projects_ruler {
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
 }
+
 .profileSide_teamates {
     margin-bottom: 10%;
 }
+
 .taskSide {
     margin-top: 30px;
     height: 90%;
@@ -134,7 +213,7 @@
 
 .more_option_btn {
     margin-top: 3%;
-    margin-left: 22.5%;
+    margin-left: 31%;
     width: 10%;
     height: 30%;
     text-align: center;
@@ -264,49 +343,39 @@
     height: 80%;
     background: wheat;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
 .calendar_header {
     height: 10%;
     width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom: 1px solid black;
     overflow: auto;
 }
 
-.calendar_col_top_left {
-    height: 100%;
-    width: 20%;
-    float: left;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.calendar_col_top {
-    height: 100%;
-    width: 20%;
-    border: 1px solid black;
-    float: left;
-}
-
-.calendar_col_top_right {
-    height: 100%;
-    width: 20%;
-    float: right;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+.calendar_header>.calendar_col,
+.calendar_last_col {
+    text-align: center;
+    padding-top: 9px;
 }
 
 .calendar_row {
     height: 18%;
     width: 100%;
+    border-bottom: 1px solid black;
     overflow: auto;
 }
 
 .calendar_col {
     width: 20%;
     height: 100%;
-    border: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+}
+
+.calendar_last_col {
+    width: 20%;
+    height: 100%;
     float: left;
 }
 
@@ -316,27 +385,4 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     overflow: auto;
-}
-
-.calendar_col_bot_left {
-    width: 20%;
-    height: 100%;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    float: left;
-}
-
-.calendar_col_bot {
-    width: 20%;
-    height: 100%;
-    border: 1px solid black;
-    float: left;
-}
-
-.calendar_col_bot_right {
-    width: 20%;
-    height: 100%;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    float: left;
 }
