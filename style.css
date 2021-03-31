@@ -13,7 +13,7 @@
 
 .leftSide {
     width: 30%;
-    height: auto;
+    height: 100%;
     background: rgb(0, 204, 255);
     float: left;
 }
@@ -39,8 +39,7 @@
 .profileSide_header {
     text-align: center;
     width: 100%;
-    height:44px;
-    margin-top: 10px;
+    height: 10%;
     font: bold;
     color: rgb(145, 137, 137);
     border-bottom: 1px solid rgb(179, 171, 171);
@@ -53,11 +52,147 @@
     border-bottom: 1px solid black;
 }
 
+.profileEmail>p {
+    margin: auto;
+    font-size: 10px;
+}
+
+.profileName>p {
+    margin: auto;
+}
+
+.icon_group {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.setting_icon {
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
+
+.message_icon {
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
+
+.notice_icon {
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
+
+.progress_bar {
+    width: 80%;
+    height: 2%;
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+
+.colored_partition {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;
+    height: 100%;
+    background: deepskyblue;
+}
+
+.task_counter {
+    width: 100%;
+    height: 25%;
+    margin-top: 6%;
+    display: flex;
+}
+
+.task-text>p {
+    margin: auto;
+    font-size: 10px;
+}
+
+.completed_task {
+    margin: auto;
+}
+
+.todo_task {
+    margin: auto;
+}
+
+.all_completed_task {
+    margin: auto;
+}
+
 .profileSide_projects {
     width: 100%;
-    height: 30%;
+    height: 25%;
     border-bottom: 1px solid black;
 }
+
+.profileSide_projects_title {
+    height: 20%;
+    width: 100%;
+    float: left;
+}
+
+.profileSide_projects_title>p {
+    margin: auto;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+
+.projects_container {
+    height: 80%;
+    width: 100%;
+}
+
+.project_name>p {
+    margin: auto;
+}
+
+.project_name {
+    margin-top: 2%;
+}
+
+.project {
+    height: 25%;
+    width: 100%;
+    margin-left: 10%;
+    display: flex;
+}
+
+.colored_cycle {
+    width: 10%;
+    height: 100%;
+    float: left;
+    margin-top: 3%;
+}
+
+.big_cycle {
+    width: 50%;
+    height: 45.7%;
+    border-radius: 50%;
+    background: black;
+    margin: auto;
+    display: flex;
+}
+
+.small_cycle {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: pink;
+    margin: auto;
+}
+
 .profileSide_header_avatar {
     width: 40px;
     height: 40px;
@@ -65,30 +200,49 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.profileSide_info_icon {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-left: 10%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.profileSide_projects_ruler_inline {
-    display: flex;
-    height: 30px;
-}
-.profileSide_info_data{
+
+.profileSide_info_data {
     width: 20%;
     margin-left: 10%;
     text-align: center;
 }
-.profileSide_projects_ruler {
-    margin-left: 10%;
-    margin-top: 10%;
-}
+
 .profileSide_teamates {
-    margin-bottom: 10%;
+    width: 100%;
+    height: 20%;
+    overflow: auto;
 }
+
+.teamates_header {
+    width: 100%;
+    height: 40%;
+}
+
+.teamates_header>p {
+    margin: auto;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.teamates_list {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.teamate {
+    width: 25%;
+    height: 50%;
+}
+
+.teamate_avatar {
+    border-radius: 50%;
+    margin: auto;
+    width: 53%;
+    height: 100%;
+    background: black;
+}
+
 .taskSide {
     margin-top: 30px;
     height: 90%;
@@ -103,6 +257,49 @@
     width: 100%;
     height: 10%;
     border-bottom: 1px solid black;
+    display: flex;
+}
+
+.search_group_btn {
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 15%;
+    height: 50%;
+    display: flex;
+}
+
+.search_icon {
+    width: 20%;
+    height: 100%;
+}
+
+.search_input {
+    width: 80%;
+    height: 100%;
+}
+
+.search_input>p {
+    margin: auto;
+}
+
+.calendar_text {
+    margin-top: 3%;
+    margin-left: 22.5%;
+    width: 15%;
+    height: 50%;
+}
+
+.calendar_text>p {
+    text-align: center;
+    margin: auto;
+}
+
+.more_option_btn {
+    margin-top: 3%;
+    margin-left: 31%;
+    width: 10%;
+    height: 30%;
+    text-align: center;
 }
 
 .taskSide_content {
@@ -112,8 +309,139 @@
     border-bottom-right-radius: 5px;
 }
 
-.taskSide_content_button {
+.taskSide_content_buttons {
     height: 15%;
+    width: 100%;
+    display: flex;
+}
+
+.week_month_group_button {
+    margin-top: 3%;
+    margin-left: 5%;
+    height: 40%;
+    width: 16%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 2px solid pink;
+    overflow: auto;
+}
+
+.week_button {
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: pink;
+    float: left;
+}
+
+.week_button>p {
+    padding-top: 8%;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+}
+
+.month_button {
+    height: 100%;
+    width: 50%;
+    float: left
+}
+
+.month_button>p {
+    padding-top: 8%;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+}
+
+.current_time_group_btn {
+    margin-top: 3%;
+    margin-left: 22.5%;
+    width: 15%;
+    height: 50%;
+    float: left;
+    display: flex;
+}
+
+.previous_month {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.current_month_years_group_btn {
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.current_month {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+
+.current_month>p {
+    margin: auto;
+}
+
+.current_year {
+    text-align: center;
+    width: 100%;
+    height: 50%;
+}
+
+.current_year>p {
+    margin: auto;
+}
+
+.next_month {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+.show_weekend_button {
+    margin: auto;
+    height: 40%;
+    width: 14%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: royalblue;
+    float: left;
+}
+
+.show_weekend_button>p {
+    padding-top: 7%;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+}
+
+.add_task_button {
+    margin-top: 3.5%;
+    margin-right: auto;
+    height: 40%;
+    width: 14%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: royalblue;
+    float: left;
+}
+
+.add_task_button>p {
+    padding-top: 7%;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
 }
 
 .taskSide_content_calendar {
@@ -122,15 +450,24 @@
     height: 80%;
     background: wheat;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
 .calendar_header {
     height: 10%;
     width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     border-bottom: 1px solid black;
     overflow: auto;
+}
+
+.calendar_header>.calendar_col>p {
+    text-align: center;
+    padding-top: 7%;
+}
+
+.calendar_header>.calendar_last_col>p {
+    text-align: center;
+    padding-top: 7%;
 }
 
 .calendar_row {
@@ -140,16 +477,44 @@
     overflow: auto;
 }
 
-.calendar_bottom {
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    overflow: auto;
-}
-
 .calendar_col {
     width: 20%;
     height: 100%;
-    border-radius: 5px;
-    border: 1px solid black;
+    border-right: 1px solid black;
     float: left;
+}
+
+.calendar_last_col {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.calendar_last_col>p {
+    margin: auto;
+}
+
+.calendar_col>p {
+    margin: auto;
+}
+
+.calendar_date {
+    width: 20%;
+    height: 20%;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.calendar_date>p {
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.calendar_bottom {
+    width: 100%;
+    height: 18%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow: auto;
 }
