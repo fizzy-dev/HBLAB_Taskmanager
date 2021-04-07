@@ -14,14 +14,14 @@
 .leftSide {
     width: 30%;
     height: 100%;
-    background: rgb(0, 204, 255);
+    background: rgb(191, 232, 240);
     float: left;
 }
 
 .rightSide {
     width: 70%;
     height: 100%;
-    background: blueviolet;
+    background: rgb(191, 232, 240);
     float: right;
 }
 
@@ -30,10 +30,11 @@
     height: 90%;
     width: 85%;
     float: right;
-    background: rgb(247, 245, 243);
+    background: rgb(255, 255, 255);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     margin-bottom: 10%;
+    border-right: 2px solid rgb(170, 162, 162);
 }
 
 .profileSide_header {
@@ -42,14 +43,15 @@
     height: 10%;
     font: bold;
     color: rgb(145, 137, 137);
-    border-bottom: 1px solid rgb(179, 171, 171);
+    border-bottom: 2px solid rgb(170, 162, 162);
+    padding-top: 20px;
 }
 
 .profileSide_info {
     width: 100%;
     height: 45%;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(170, 162, 162);
 }
 
 .profileEmail>p {
@@ -89,7 +91,7 @@
 .progress_bar {
     width: 80%;
     height: 2%;
-    border: 1px solid black;
+    border: 2px solid rgb(170, 162, 162);
     margin-top: 5%;
     margin-left: 10%;
     border-bottom-left-radius: 10px;
@@ -134,7 +136,7 @@
 .profileSide_projects {
     width: 100%;
     height: 25%;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(170, 164, 164);
 }
 
 .profileSide_projects_title {
@@ -248,7 +250,7 @@
     height: 90%;
     width: 95%;
     float: left;
-    background: salmon;
+    background: rgb(255, 255, 255);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -256,7 +258,7 @@
 .taskSide_header {
     width: 100%;
     height: 10%;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(170, 162, 162);
     display: flex;
 }
 
@@ -303,7 +305,7 @@
 }
 
 .taskSide_content {
-    background: greenyellow;
+    background: rgba(207, 214, 209, 0.11);
     width: 100%;
     height: 90%;
     border-bottom-right-radius: 5px;
@@ -313,10 +315,11 @@
     height: 15%;
     width: 100%;
     display: flex;
+    font-weight: bold;
 }
 
 .week_month_group_button {
-    margin-top: 3%;
+    margin-top: 3.5%;
     margin-left: 5%;
     height: 40%;
     width: 16%;
@@ -324,7 +327,7 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    border: 2px solid pink;
+    border: 2px solid rgb(64, 134, 240);
     overflow: auto;
 }
 
@@ -333,7 +336,8 @@
     width: 50%;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    background: pink;
+    background: rgb(64, 134, 240);
+    color: white;
     float: left;
 }
 
@@ -355,6 +359,7 @@
     text-align: center;
     font-size: 14px;
     margin: auto;
+    color: rgb(64, 134, 240);
 }
 
 .current_time_group_btn {
@@ -413,8 +418,11 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    background: royalblue;
+    background: rgba(207, 214, 209, 0.11);
     float: left;
+    color: rgb(201, 192, 192);
+    border: 2px solid;
+    opacity: 70%;
 }
 
 .show_weekend_button>p {
@@ -435,6 +443,8 @@
     border-bottom-right-radius: 30px;
     background: royalblue;
     float: left;
+    color: white;
+    font: bold;
 }
 
 .add_task_button>p {
@@ -448,15 +458,16 @@
     margin: auto;
     width: 90%;
     height: 80%;
-    background: wheat;
+    background: rgb(248, 248, 248);
     border-radius: 5px;
-    border: 1px solid black;
+    border: 2px solid rgb(170, 162, 162);
 }
 
 .calendar_header {
     height: 10%;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(170, 162, 162);
+    font-weight: bold;
     overflow: auto;
 }
 
@@ -473,14 +484,14 @@
 .calendar_row {
     height: 18%;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(170, 162, 162);
     overflow: auto;
 }
 
 .calendar_col {
     width: 20%;
     height: 100%;
-    border-right: 1px solid black;
+    border-right: 2px solid rgb(170, 162, 162);
     float: left;
 }
 
